@@ -25,6 +25,7 @@ FROM
     products AS p
 LEFT JOIN
     productlines AS pl ON p.productLine = pl.productLine;
+
 Quetion Three
 Write an SQL query to retrieve the orderDate, shippedDate, status, and customerNumber for the first 10 orders.
 Use a RIGHT JOIN to combine the customers table with the orders table using the customerNumber column.
@@ -42,6 +43,7 @@ LIMIT 10;
 
 
   
+
 
 
 
