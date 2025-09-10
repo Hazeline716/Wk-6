@@ -25,5 +25,23 @@ FROM
     products AS p
 LEFT JOIN
     productlines AS pl ON p.productLine = pl.productLine;
+Quetion Three
+Write an SQL query to retrieve the orderDate, shippedDate, status, and customerNumber for the first 10 orders.
+Use a RIGHT JOIN to combine the customers table with the orders table using the customerNumber column.
+  -- I want to use a Right Join to combine orders
+  SELECT FROM salesdb;
+    o.orderDate,
+    o.shippedDate,
+    o.status,
+    c.customerNumber
+FROM
+    customers AS c
+RIGHT JOIN
+    orders AS o ON c.customerNumber = o.customerNumber
+LIMIT 10;
+
+
+  
+
 
 
