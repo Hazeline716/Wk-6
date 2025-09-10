@@ -13,4 +13,17 @@ INNER JOIN
     offices AS o ON e.officeCode = o.officeCode;
 (This query uses aliases (e for employees and o for offices) to make the code cleaner and easier to read.)
 
+Questin Two
+Write an SQL query to get the productName, productVendor, and productLine from the products table.
+Use a LEFT JOIN to combine the products table with the productlines table using the productLine column.
+  -- I want to combine product details using a Left Join
+  SELECT FROM salesdb;
+    p.productName,
+    p.productVendor,
+    pl.productLine
+FROM
+    products AS p
+LEFT JOIN
+    productlines AS pl ON p.productLine = pl.productLine;
+
 
